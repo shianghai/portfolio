@@ -6,11 +6,17 @@
 
 
 .section-title h5{
-
     text-align: center;
-
 }
 
+.section-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
 .tech-content{
     padding: 10px;
     color: black;
@@ -109,4 +115,13 @@ transition-duration: 1s;
 .load-more-tech-stack:hover{
     background-color: blueviolet;
     transition-duration: 1s;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }

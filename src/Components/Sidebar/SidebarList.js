@@ -1,6 +1,6 @@
 import React from "react";
 import "./SidebarList.css";
-import profilepic from "../../Image/a.jpg";
+import profilepic from "../../Image/dp.png";
 
 import {
   FcNightPortrait,
@@ -187,7 +187,7 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcTodoList size={25} />
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="testimonial"
                 spy={true}
@@ -197,7 +197,7 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <FcSalesPerformance size={25} />
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="contactsection"

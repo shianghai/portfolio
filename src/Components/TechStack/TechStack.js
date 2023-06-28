@@ -2,54 +2,102 @@ import React, { useState } from "react";
 import "./TechStack.css";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+
+
 const TechStack = () => {
   const data = [
     {
-      name: "Full Stack Developer",
+      name: "C#",
+      stack: "backend"
     },
     {
-      name: "Node js",
+      name: ".Net Core",
+      stack: "backend"
+    },  
+    {
+      name: "Entity Framework Core"
     },
     {
-      name: "React js",
+      name: "XUnit",
+      stack: "backend",
     },
     {
-      name: "Vue js",
-    },
-    {
-      name: "Express js",
-    },
-    {
-      name: "Vue js",
-    },
-    {
-      name: "Nuxt js",
-    },
-    {
-      name: "Angular js",
-    },
-    {
-      name: "Vanila js",
-    },
-    {
-      name: "Node js",
+      name: "Moq",
+      stack: "backend"
     },
     {
       name: "Javascript",
+      stack: "frontend"
     },
     {
       name: "Typescript",
+      stack: "frontend"
+    },
+    
+    // {
+    //   name: "React-Native",
+    //   stack: "mobile"
+    // },
+    
+    {
+      name: "Node js",
+      stack: "backend"
     },
     {
-      name: "Python",
+      name: "Express",
+      stack: "backend"
     },
     {
-      name: "Django",
-    },
+      name: "Microsoft SQL Server"
+    }, 
     {
-      name: "UI/UX Design",
-    },
+       name: "React js",
+       stack: "frontend"
+     },
   ];
+
+  const frontendStack = [
+    {
+      name: "React js",
+      stack: "frontend"
+    },
+    {
+      name: "Javascript",
+      stack: "frontend"
+    },
+    {
+      name: "Typescript",
+      stack: "frontend"
+    },
+  ]
+
+  const backendStack = [
+    {
+      name: "C#",
+      stack: "backend"
+    },
+    {
+      name: ".Net Core",
+      stack: "backend"
+    },
+    {
+      name: "Node js",
+      stack: "backend"
+    },
+    {
+      name: "Express",
+      stack: "backend"
+    },
+  ]
+
+  const mobileStack = [
+    {
+      name: "React-Native",
+      stack: "mobile"
+    },
+  ]
+
+
 
   const colors = [
     "#F1C40F",
@@ -78,9 +126,10 @@ const TechStack = () => {
   return (
     <div className="container techstack-section" id="techstack">
       <div className="section-title">
-        <h5>Tech Stack</h5>
-        <span className="line"></span>
+        <h2>Skills And Tech Stack</h2>
+        <span className="line" style={{marginBottom: '5%'}}></span>
       </div>
+
 
       <div className="row">
         {data.slice(0, showMoreTechStack).map((item, index) => (
@@ -88,9 +137,7 @@ const TechStack = () => {
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
               <div
                 className={
-                  index === 0
-                    ? "tech-content-marked tech-content"
-                    : "tech-content"
+                   "tech-content"
                 }
               >
                 <span
@@ -104,6 +151,93 @@ const TechStack = () => {
             </div>
           </Fade>
         ))}
+        {/* <div className="col-xl-4 col-lg-2 col-md-2 col-sm-12">
+          <h3>Backend Development</h3>
+          {
+            backendStack.map((skill, index) => {
+              return (
+
+                <div key={index}>
+
+                  <Fade right>
+                    <div
+                      className={"tech-content"
+                      }
+                    >
+
+                      <span
+                        className="tech-number"
+                        style={{ backgroundColor: colors[index] }}
+                      >
+                        {index + 1}
+                      </span>
+                      <p>{skill.name}</p>
+                    </div>
+                  </Fade>
+                </div>
+
+              )
+            })
+          }
+        </div>
+        <div className="col-xl-4 col-lg-2 col-md-2 col-sm-12">
+          <h3>Frontend Development</h3>
+          {
+            frontendStack.map((skill, index) => {
+              return (
+
+                <div key={index}>
+
+                  <Fade right>
+                    <div
+                      className={"tech-content"
+                      }
+                    >
+
+                      <span
+                        className="tech-number"
+                        style={{ backgroundColor: colors[index] }}
+                      >
+                        {index + 1}
+                      </span>
+                      <p>{skill.name}</p>
+                    </div>
+                  </Fade>
+                </div>
+
+              )
+            })
+          }
+        </div>
+        <div className="col-xl-4 col-lg-2 col-md-2 col-sm-12">
+          <h3>Mobile Development</h3>
+          {
+            mobileStack.map((skill, index) => {
+              return (
+
+                <div key={index}>
+
+                  <Fade right>
+                    <div
+                      className={"tech-content"
+                      }
+                    >
+
+                      <span
+                        className="tech-number"
+                        style={{ backgroundColor: colors[index] }}
+                      >
+                        {index + 1}
+                      </span>
+                      <p>{skill.name}</p>
+                    </div>
+                  </Fade>
+                </div>
+
+              )
+            })
+          }
+        </div> */}
       </div>
 
       {showMoreTechStack >= data.length ? null : (

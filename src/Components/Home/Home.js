@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import MyCv from "./cv.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Fade from "react-reveal/Fade";
 
@@ -24,15 +23,13 @@ const Home = ({ theme, changeTheme }) => {
 
       <div className="container home-content">
         <Fade right>
-          <h1>Hi I'm Yazdani Chowdhury</h1>
+          <h1>Hi! I am Shiangah Francis</h1>
           <h3>
             <Typewriter
               options={{
                 strings: [
-                  "Full Stack Software Developer",
-                  "MERN Stack Developer",
-                  "Web Developer",
-                  "UI/UX Designer",
+                  "Software Developer",
+                  "Backend Engineer"
                 ],
                 autoStart: true,
                 loop: true,
@@ -54,7 +51,7 @@ const Home = ({ theme, changeTheme }) => {
               <div className="hire-me-button">Hire Me</div>
             </Link>
             <div className="get-resume-button">
-              <a href={MyCv} download="Yazdani_cv.pdf">
+              <a href={require("./Francis_Shiangah_resume.pdf")} >
                 Get Resume
               </a>
             </div>

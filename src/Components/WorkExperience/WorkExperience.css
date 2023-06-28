@@ -27,3 +27,12 @@
 #dark .date-class{
     color: white;
 }
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}

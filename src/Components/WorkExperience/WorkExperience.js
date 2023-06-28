@@ -11,16 +11,13 @@ import { MdGroupWork } from "react-icons/md";
 const WorkExperience = () => {
   const data = [
     {
-      companyname: "Google",
+      companyname: "BIC Technologies Company Limited",
       position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2021-2022",
+      des: "Currently doing my 1 year obligatory national service duty at BIC Technologies. Which is a software comapany that provides bussiness applications for insurance companies in Ghana",
+      year: "2022-Current",
       techskills: [
         {
-          techname: "Node JS",
-        },
-        {
-          techname: "Express JS",
+          techname: ".Net Core",
         },
         {
           techname: "React JS",
@@ -28,13 +25,28 @@ const WorkExperience = () => {
         {
           techname: "Material UI",
         },
+        {
+          techname: "JQuery",
+        },
+        {
+          techname: "Html",
+        },
+        {
+          techname: "Css",
+        },
+        {
+          techname: "Typescript",
+        },
+        {
+          techname: "Javascript",
+        },
       ],
     },
 
     {
-      companyname: "Facebook",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
+      companyname: "Techup Studios",
+      position: "Full Stack Mobile App Developer ",
+      des: "Techup Studios is a startup company that delivers software as a service",
       year: "2020-2021",
 
       techskills: [
@@ -45,98 +57,10 @@ const WorkExperience = () => {
           techname: "Express JS",
         },
         {
-          techname: "Vue JS",
+          techname: "React",
         },
         {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Youtube",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2019-2020",
-
-      techskills: [
-        {
-          techname: "Django",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Vue JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Microsoft",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2018-2019",
-
-      techskills: [
-        {
-          techname: "Python",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Vue JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "WhatsApp",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2017-2018",
-
-      techskills: [
-        {
-          techname: "Typescript",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Next JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Instagram",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2016-2017",
-
-      techskills: [
-        {
-          techname: "Javascript",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Next JS",
-        },
-        {
-          techname: "Material UI",
+          techname: "React Native",
         },
       ],
     },
@@ -154,7 +78,7 @@ const WorkExperience = () => {
   return (
     <div className="container workexperience-section" id="workexperience">
       <div className="section-title">
-        <h5>Work Experience</h5>
+        <h2>Work Experience</h2>
         <span className="line"></span>
       </div>
 

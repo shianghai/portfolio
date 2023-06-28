@@ -22,16 +22,28 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
-      <div id={theme}>
+      <div id={theme} style={{marginLeft: '10%'}}>
         <NavbarMobileView changeTheme={changeTheme} theme={theme}/>
 
         <Sidebar changeTheme={changeTheme} theme={theme}/>
         <About />
-        <WorkExperience />
-        <TechStack />
-        <Education />
-        <Project />
-        <Testimonial />
+        <div style={{marginBottom: "12%"}}>
+          <WorkExperience />
+
+        </div>
+        <div style={{ marginBottom: "12%" }}>
+          <TechStack />
+
+        </div>
+        <div style={{ marginBottom: "12%" }}>
+          <Education />
+
+        </div>
+        <div style={{ marginBottom: "12%" }}>
+          <Project />
+
+        </div>
+        {/* <Testimonial /> */}
         <Contact />
       </div>
 

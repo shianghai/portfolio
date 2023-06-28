@@ -17,6 +17,25 @@
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
 }
 
+.address-item-header {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 25px;
+    color: cornflowerblue;
+    font-weight: 200;
+}
+
+.address-content {
+    font-size: 24px;
+    display: block;
+}
+
+.card-container{
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+        -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+        -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+}
+
 .contact-form-iamge img{
 
     height: 600px;

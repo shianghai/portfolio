@@ -53,86 +53,108 @@ const Contact = () => {
   };
 
   return (
-    <div className="container contact-section" id="contactsection">
-      <div className="row">
-        <Fade bottom>
-          <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">
-            <div className="contact-form-iamge">
-              <img
-                src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="contact form image"
-              />
-            </div>
-          </div>
-        </Fade>
+    <di>
+      <div className="section-title">
+        <h2>Contact</h2>
+        <span className="line"></span>
+      </div>
+      <div className="container contact-section" id="contactsection">
 
-        <Fade right>
-          <div className="col-xl-7 col-lg-7 col-md-7 col-sm-7">
-            <div className="contact-form-design">
-              <div className="text-center">
-                <h5>Contact Me</h5>
-              </div>
-              <form>
-                <div className="contact-form">
-                  <label className="form-lebel">Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </div>
-
-                <div className="contact-form">
-                  <label className="form-lebel">E-mail</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-
-                <div className="contact-form">
-                  <label className="form-lebel">Job Types</label>
-                  <select
-                    className="custom-select-tag"
-                    value={jobtypes}
-                    onChange={(e) => setJobtypes(e.target.value)}
-                  >
-                    <option>Full-time</option>
-                    <option>Working Student</option>
-
-                    <option>Part-time</option>
-
-                    <option>Contract</option>
-                  </select>
-                </div>
-
-                <div className="contact-form">
-                  <label className="form-lebel">Message</label>
-                  <textarea
-                    rows="4"
-                    type="text"
-                    className="form-control"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
-                </div>
-
-                <div className="button-submit" onClick={sendemailInfo}>
-                  <p>
-                    Send <RiSendPlaneFill size={20} />
+        <div className="row">
+          <Fade bottom>
+            <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5" style={{ alignItems: "flex-start", justifyContent: "center", display: "flex", flexDirection: "column" }}>
+              <div>
+                <div className="address-item">
+                  <p className="address-item-header">Address</p>
+                  <p className="address-content">
+                    Mempeasem, East Legon
+                    Accra, Ghana
                   </p>
                 </div>
-              </form>
+                <div className="address-item">
+                  <p className="address-item-header">Phone</p>
+                  <p className="address-content">0531584995</p>
+                </div>
+                <div className="address-item">
+                  <p className="address-item-header">Email</p>
+                  <p className="address-content">
+                    fshiangah@st.ug.edu.gh
+                    shiangahfrancis@gmail.com
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </Fade>
-      </div>
+          </Fade>
 
-      <ToastContainer draggable autoClose={8000} />
-    </div>
+          <Fade right>
+            <div className="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+              <div className="contact-form-design">
+                <div className="text-center">
+                  <h5>Send Me A Message</h5>
+                </div>
+                <form>
+                  <div className="contact-form">
+                    <label className="form-lebel">Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="contact-form">
+                    <label className="form-lebel">E-mail</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="contact-form">
+                    <label className="form-lebel">Job Types</label>
+                    <select
+                      className="custom-select-tag"
+                      value={jobtypes}
+                      onChange={(e) => setJobtypes(e.target.value)}
+                    >
+                      <option>Full-time</option>
+                      <option>Working Student</option>
+
+                      <option>Part-time</option>
+
+                      <option>Contract</option>
+                    </select>
+                  </div>
+
+                  <div className="contact-form">
+                    <label className="form-lebel">Message</label>
+                    <textarea
+                      rows="4"
+                      type="text"
+                      className="form-control"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="button-submit" onClick={sendemailInfo}>
+                    <p>
+                      Send <RiSendPlaneFill size={20} />
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </Fade>
+        </div>
+
+        <ToastContainer draggable autoClose={8000} />
+      </div>
+    </di>
+   
   );
 };
 

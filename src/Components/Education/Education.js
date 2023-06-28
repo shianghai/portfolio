@@ -13,28 +13,17 @@ import {
 const Education = () => {
   const data = [
     {
-      name: "Oxford University",
-      degree: "M.sc in Software Engineering",
-      year: "2020-2022",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      name: "University Of Ghana",
+      degree: "Bsc Computer Science",
+      year: "2017-2022",
+      des: "Completed a four year bachelor of science in Computer Science at the the premier university",
     },
+   
     {
-      name: "MIT University",
-      degree: "B.sc in Software Engineering",
-      year: "2016-2020",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-    },
-    {
-      name: "Cambridge College",
-      degree: "College Graduation",
-      year: "2014-2016",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-    },
-    {
-      name: "Queen school",
-      degree: "School Graduation",
-      year: "2007-2013",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      name: "Anseco (Anlo Senior High School)",
+      degree: "General Science",
+      year: "2013-2016",
+      des: "Completed Anlo Senior Secondary School located at Anloga in the heart of the volta region",
     },
   ];
 
@@ -50,7 +39,7 @@ const Education = () => {
     <div className="container education-section" id="education">
 
       <div className="section-title">
-        <h5>Education</h5>
+        <h2>Education</h2>
         <span className="line"></span>
       </div>
 
@@ -82,8 +71,6 @@ const Education = () => {
           ))}
         </VerticalTimeline>
       </div>
-
-
     </div>
   );
 };
